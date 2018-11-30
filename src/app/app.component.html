@@ -2,4 +2,11 @@
 <p>Please create a test case and attach the link of the plunkr to your github issue report.</p>
 
 <button pButton label="PrimeNG" (click)="onClick($event)"></button>
-{{counter}}
+{{dropValue}}
+<div class="ui-g ui-fluid">
+    <div class="ui-g-3">
+      <p-dropdown name="dropValue" [options]="dropOptions" [(ngModel)]="dropValue"
+        optionLabel="title" inputId="id" dataKey="id" [style]="{'width':'100%'}" autoDisplayFirst="false"
+      ></p-dropdown>
+  </div>
+</div>
